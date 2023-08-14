@@ -68,6 +68,8 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --accents-8: #fafafa;
+  --accents-7: #eaeaea;
   --accents-6: #999;
   --accents-5: #888;
   --accents-4: #666;
@@ -161,7 +163,6 @@ input, textarea {
 
 html { 
   font-family: var(--ff-poppins); 
-  background: var(--geist-background);
 }
 
 /*body { background: var(--smoky-black); }*/
@@ -314,6 +315,14 @@ article.active {
 
 
 
+.gradient-text {
+    --text-gradient: linear-gradient(180deg,#fff,#adadad);
+
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--accents-8);
+}
 
 
 /*-----------------------------------*\
@@ -1424,7 +1433,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .service-item {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 18px;
     padding: 30px;
   }
